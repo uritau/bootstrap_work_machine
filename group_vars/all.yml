@@ -1,0 +1,20 @@
+---
+
+## Role lciolecki.virtualenvwrapper:
+virtualenvwrapper_python: "/usr/bin/python3.6"
+virtualenvwrapper_shell_file: "{{ lookup('env', 'HOME') }}/.zshrc"
+
+## Role gantsign.visual-studio-code
+# users:
+#   - username: {{ ansible_user_id }}
+#     visual_studio_code_extensions:
+#       - # extension 1
+#       - # extension 2
+#     visual_studio_code_settings: # JSON object
+
+git:
+  user:
+    name: Richard Attermeyer
+    email: richard.attermeyer@gmail.com
+    account: "{{ ansible_user_id }}"
+gui_enabled: true

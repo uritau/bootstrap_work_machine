@@ -1,0 +1,50 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: "Install virtualenvwrapper"
+      import_role:
+        name: lciolecki.virtualenvwrapper
+      become: false
+
+    - name: "Install docker and docker-compose"
+      import_role:
+        name: geerlingguy.docker
+
+    - name: "Install Terraform"
+      import_role:
+        name: azavea.terraform
+
+    - name: "Azure CLI"
+      import_role:
+        name: huxoll.azure-cli
+
+    - name: "Install Virtualbox"
+      import_role:
+        name: azavea.virtualbox
+
+## To review
+    - name: "Install GIT (and meld, sets user, gitk ..."
+      import_role:
+        name: rattermeyer.git
+
+
+
+##### Extra software
+    - name: "Install Spotify"
+      import_role:
+        name: iknite.spotify
+
+    - name: "Install Franz"
+      import_role:
+        name: patrick-hill.franz
+
+# Review
+
+    - name: "Install Visual studio code"
+      import_role:
+        name: gantsign.visual-studio-code
+
+    - name: "Install ZSH"
+      import_role:
+        name: mashimom.oh-my-zsh
