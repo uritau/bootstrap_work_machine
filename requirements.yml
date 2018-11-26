@@ -1,11 +1,13 @@
 ---
 
-lciolecki.virtualenvwrapper
-geerlingguy.docker
-azavea.terraform
-gantsign.visual-studio-code
-huxoll.azure-cli
-rattermeyer.git
-azavea.virtualbox
-andrewrothstein.vagrant
-iknite.spotify
+- "lciolecki.virtualenvwrapper"
+- src: "geerlingguy.docker"
+- src: "azavea.terraform"
+- src: "gantsign.visual-studio-code"
+- src: "huxoll.azure-cli"
+- src: "rattermeyer.git"
+- src: "azavea.virtualbox"
+- src: "andrewrothstein.vagrant"
+- src: "iknite.spotify"
+- src: "patrick-hill.franz"
+- src: "mashimom.oh-my-zsh"

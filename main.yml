@@ -18,19 +18,15 @@
     - name: "Azure CLI"
       import_role:
         name: huxoll.azure-cli
+# "No package matching 'virtualbox-4.3' is available"
+#    - name: "Install Virtualbox"
+#      import_role:
+#        name: azavea.virtualbox
 
-    - name: "Install Virtualbox"
-      import_role:
-        name: azavea.virtualbox
-
-## To review
     - name: "Install GIT (and meld, sets user, gitk ..."
       import_role:
         name: rattermeyer.git
 
-
-
-##### Extra software
     - name: "Install Spotify"
       import_role:
         name: iknite.spotify
@@ -38,8 +34,6 @@
     - name: "Install Franz"
       import_role:
         name: patrick-hill.franz
-
-# Review
 
     - name: "Install Visual studio code"
       import_role:
