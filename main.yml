@@ -42,3 +42,18 @@
     - name: "Install ZSH"
       import_role:
         name: mashimom.oh-my-zsh
+
+    - name: "Install k8s"
+      import_role:
+        name: ericsysmin.kubectl
+      tags: 
+        - "k8s"
+        - "minikube"
+
+
+    - name: "Install Minikube"
+      import_role:
+        name: andrewrothstein.minikube
+      tags: 
+        - "minikube"
+        

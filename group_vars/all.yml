@@ -18,3 +18,9 @@ git:
     email: richard.attermeyer@gmail.com
     account: "{{ ansible_user_id }}"
 gui_enabled: true
+
+
+#Minikube
+
+# minikube_install_drivers:
+#   - kvm2
